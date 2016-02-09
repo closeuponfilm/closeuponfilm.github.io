@@ -77,6 +77,12 @@ nav > ul > li.active > a {
 	width: 100%;
 	text-align: center;
 }
+.intro > h3 > a:hover {
+	color: hsla(0, 80%, 26%, 1);
+}
+.post:hover > .image > a > img, .post:hover {
+	box-shadow: hsla(0, 70%, 14%, 1) 0 0 5px;
+}
 
 .post > .image {
 	width: 30%;
