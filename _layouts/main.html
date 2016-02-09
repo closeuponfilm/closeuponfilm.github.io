@@ -1,0 +1,25 @@
+---
+---
+<html>
+	<head>
+		<title>Close Up On Film</title>
+		<link rel="stylesheet" href="/css/jingle.css" />
+	</head>
+	<body>
+		<div id="head">
+			<h1><a href="/">Close Up</a></h1>
+			<h2>On Film</h2>
+			<nav>
+				<ul>
+					<li{% if page.url == "/review/" %} class="active"{% endif %}><a href="/review/">Review</a>
+					<li{% if page.url == "/podcast/" %} class="active"{% endif %}><a href="/podcast/">Podcast</a>
+					<li{% if page.url == "/news/" %} class="active"{% endif %}><a href="/news/">News</a>
+					<li{% if page.url == "/features/" %} class="active"{% endif %}><a href="/features/">Features</a>
+				</ul>
+			</nav>
+		</div>
+		<div id="main">
+			{{ content }}
+		</div>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+	background:	hsla(30, 70%, 86%, 1);
+	color:		hsla(0, 20%, 14%, 1);
+	font-family: 'Segoe UI', Arial, Helvetica, Sans-Serif;
+	margin: 0 20%;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+h1, h2, nav {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+nav {
+	padding: 10px 0;
+}
+
+nav > ul {
+	margin: 0;
+	padding: 0 10px;
+}
+nav > ul > li {
+	display: inline-block;
+	width: 25%;
+	overflow: hidden;
+	border-color: hsla(240, 50%, 80%, 1);
+	border-style: solid;
+	border-width: 0 1px 0 0;
+	border-collapse: collapse;
+	box-sizing: border-box;
+
+}
+
+nav > ul > li:first-of-type {
+	border-radius: 5px 0 0 5px;
+}
+nav > ul > li:last-of-type {
+	border-radius: 0 5px 5px 0;
+}
+
+nav > ul > li > a {
+	display: block;
+	background:	hsla(30, 40%, 14%, 1);
+	color:		hsla(40, 30%, 97%, 1);
+}
+nav > ul > li > a:hover {
+	background:	hsla(10, 80%, 26%, 1);
+	color:		hsla(50, 30%, 97%, 1);
+}
+
+nav > ul > li.active > a {
+	background:	hsla(230, 50%, 34%, 1);
+}
+
+#head {
+	background: hsla(20, 80%, 96%, 1);
+}
+
+#main {
+	background: hsla(20, 80%, 96%, 1);
+	padding: 10px;
+}
+
+.post {
+	vertical-align: top;
+	border: 1px hsla(240, 0%, 78%, 1) solid;
+	margin: 10px;
+	padding: 10px;
+	border-box: content-box;
+}
+
+.intro > h3 {
+	margin-top: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.post > .image {
+	width: 30%;
+	vertical-align: middle;
+}
+.post > .intro {
+	width: 69%;
+	vertical-align: top;
+}
+.post > .image,
+.post > .intro {
+	display: inline-block;
+	
+}
+
+img {
+	max-width: 100%;
+}
