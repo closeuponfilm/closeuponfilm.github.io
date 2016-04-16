@@ -5,6 +5,7 @@ categories:
 - review
 image: josh
 layout: post
+author: Daniel Kelly
 ---
 Judd Apatow&apos;s latest opus, loosely based on Edgar Allen Poe&apos;s _The Raven_,
 is an ambitious affair.

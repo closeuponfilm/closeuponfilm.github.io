@@ -7,6 +7,5 @@ image: mike
 summary: Hello!
 layout: post
 author: Andrew Gaudion
-subhead: Andy sums stuff up and that
 ---
-All the best things to have happened in cinema this January, and some of the worst.
+All the best things to have happened in cinema this February, and some of the worst.
