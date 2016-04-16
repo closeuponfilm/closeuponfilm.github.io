@@ -1,0 +1,61 @@
+#footer {
+	width: 100%;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: hsla(0, 0%, 0%, 1);
+	display: block;
+	margin-top: 2em;
+	padding: 2em 0;
+	position: relative;
+}
+
+#footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer > * {
+	display: inline-block;
+	margin: 0;
+}
+
+#footer > ul#links {
+	padding-left: 2em;
+	width: 25%;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-family: 'Futura Bold', 'Segoe UI', Arial, Helvetica, Sans-Serif;
+}
+
+#footer > #copyright {
+	width: 50%;
+	text-align: center;
+}
+
+#footer > #copyright > * {
+	vertical-align: bottom;
+	margin: 0;
+}
+
+#footer > #social {
+	padding-left: 2em;
+	position: absolute;
+	right: 0;
+	width: 25%;
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Futura Bold', 'Segoe UI', Arial, Helvetica, Sans-Serif;
+}
+
+#footer > #social > ul > li {
+	display: inline-block;
+	color: hsla(0, 0%, 60%, 1);
+	font-size: 2.5em;
+	width: 1em;
+	margin-right: 0.5em;
+}
+
+#footer a:hover {
+	color: hsla(0, 25%, 60%, 1);
+}

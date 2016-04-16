@@ -4,7 +4,9 @@
 	<head>
 		<title>{{ site.title }}</title>
 		<link rel="stylesheet" href="/css/jingle.css" />
-		<link rel="stylesheet" href="/css/preview.css" />
+		{% if page.url == "/" %}<link rel="stylesheet" href="/css/preview.css" />{% endif %}
+		<link rel="stylesheet" href="/css/footer.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
 	</head>
 	<body>
 		<div id="head">
@@ -20,6 +22,27 @@
 		</div>
 		<div id="main">
 			{{ content }}
+		</div>
+		<div id="footer">
+			<ul id="links">
+				<li><a href="/team/">Meet The Team</a></li>
+				<li><a href="/contact/">Contact Us</a></li>
+				<li><a href="/">Another Link</a></li>
+				<li><a href="/">Another Link</a></li>
+				<li><a href="/">Another Link</a></li>
+			</ul>
+			<div id="copyright">
+				<p>&copy; Copyright 2016 Close-Up On Film.</p>
+				<p>All Rights Reserved.</p>
+			</div>
+			<div id="social">
+				<p>Feeling social?</p>
+				<ul>
+					<li><a href="{{ site.twitter }}"><span class="fa fa-twitter"></span></a></li>
+					<li><a href="{{ site.facebook }}"><span class="fa fa-facebook"></span></a></li>
+					<li><a href="{{ site.instagram }}"><span class="fa fa-instagram"></span></a></li>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
