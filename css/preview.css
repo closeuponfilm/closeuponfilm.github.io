@@ -1,0 +1,75 @@
+.news-preview, .preview {
+	display: block;
+	font-family: 'Futura Bold', 'Segoe UI', Arial, Helvetica, Sans-Serif;
+}
+
+.news-preview > .post {
+	width: 33%;
+	height: 4em;
+}
+.preview > .post {
+	width: 25%;
+}
+
+.news-preview > .post > .image {
+	position: absolute;
+	left: 0;
+	width: 4em;
+	height: 4em;
+}
+
+.news-preview > .post > .info {
+	position: absolute;
+	left: 4em;
+	width: calc(100% - 4em);
+	height: 100%;
+	margin-left: 1em;
+	text-align: left;
+}
+
+.news-preview > .post > .info > p.date {
+	margin: 0;
+	color: hsla(0, 0%, 60%, 1);
+}
+
+.news-preview > .post > .info > h3 {
+	text-transform: none;
+}
+
+.preview > .post > .image {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.preview > .post > .info {
+	width: 100%;
+	text-align: center;
+	margin-top: 0.8em;
+}
+
+.preview > .post > .info > p.subhead {
+	margin: 0.2em 0;
+}
+
+.post {
+	position: relative;
+	vertical-align: top;
+	margin: 10px;
+	padding: 10px;
+	border-box: content-box;
+	display: inline-block;
+}
+
+.info > h3 {
+	margin: 0;
+	width: 100%;
+	font-size: 1.2em;
+}
+.info > h3 > a:hover {
+	color: hsla(0, 80%, 26%, 1);
+}
+
+.post > .image,
+.post > .info {
+	display: block;
+}

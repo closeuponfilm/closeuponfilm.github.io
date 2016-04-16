@@ -4,16 +4,31 @@
 			<img src="/media/{{ post.image }}.jpg" alt="{{ post.title }}" />
 		</a>
 	</div>
-	<div class="intro">
+	<div class="info">
 		<h3>
 			<a href="{{ post.url }}">
 				{{ post.title }}
 			</a>
 		</h3>
-		<p>
+		{% if include.type == 'news' %}
+		<p class="date">
 			<a href="{{ post.url }}">
-				{{ post.excerpt }}
+				{% assign d = post.date | date: "%-d"  %}
+				{% case d %}
+					{% when '1' or '21' or '31' %}{{ d }}st
+					{% when '2' or '22' %}{{ d }}nd
+					{% when '3' or '23' %}{{ d }}rd
+					{% else %}{{ d }}th
+				{% endcase %}
+				{{ post.date | date: "%B %Y" }}
 			</a>
 		</p>
+		{% else %}
+		<p class="subhead">
+			<a href="{{ post.url }}">
+				{{ post.subhead }}
+			</a>
+		</p>
+		{% endif %}
 	</div>
 </div>
