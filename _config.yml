@@ -2,7 +2,7 @@
 title: "Close-Up On Film"
 description: "Close-Up On Film."
 baseurl: ""
-url: "http://localhost:4000"
+url: "http://closeuponfilm.github.io/"
 
 # Build settings
 markdown: kramdown
