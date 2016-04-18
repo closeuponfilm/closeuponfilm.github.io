@@ -7,10 +7,14 @@
 }
 
 .carousel > .slide {
-	display: inline-block;
+	display: none;
 	position: relative;
 	overflow: hidden;
 	height: 450px;
+}
+
+.carousel > .slide.active {
+	display: inline-block;
 }
 
 .carousel > .slide > .info {
@@ -28,7 +32,7 @@
 	width: 100%;
 }
 
-.carousel > .controls > ul {
+.carousel > .controls > ol {
 	position: absolute;
 	bottom: 0;
 	left: 25%;
@@ -39,10 +43,15 @@
 	text-align: center;
 }
 
-.carousel > .controls > ul > li {
+.carousel > .controls > ol > li {
 	display: inline-block;
 	width: 1em;
 	height: 1em;
-	background-color: hsla(0, 90%, 98%, 1);
+	background-color: hsla(0, 5%, 18%, 1);
 	border-radius: 1em;
+	cursor: pointer;
+}
+
+.carousel > .controls > ol > li.active {
+	background-color: hsla(0, 5%, 98%, 1);
 }

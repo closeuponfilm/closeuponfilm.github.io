@@ -1,6 +1,7 @@
 <div class="carousel">
 {% for post in site.posts %}
-	<div class="slide">
+	<div
+		class="slide{% if forloop.first %} active{% endif %}">
 		<div class="image">
 			<a href="{{ post.url }}">
 				<img src="/media/{{ post.image }}.jpg" alt="{{ post.title }}" />
@@ -25,10 +26,13 @@
 		</div>
 		<div class="right-control">
 		</div>
-		<ul class="markers">
+		<ol class="markers">
 		{% for post in site.posts %}
-			<li class="marker"></li>
+			<li
+				data-target="#myCarousel"
+				data-slide-to="{{ forloop.index | minus:1 }}"
+				{% if forloop.first %}class="active"{% endif %}></li>
 		{% endfor %}
-		</ul>
+		</ol>
 	</div>
 </div>
