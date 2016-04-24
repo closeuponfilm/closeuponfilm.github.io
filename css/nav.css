@@ -1,0 +1,43 @@
+nav {
+	width: 100%;
+	display: block;
+	font-family: 'Futura Bold', 'Segoe UI', Arial, Helvetica, Sans-Serif;
+	text-transform: uppercase;
+	padding: 10px 0;
+	font-size: 1.4em;
+}
+
+nav > ul {
+	margin: 0;
+	padding: 0;
+}
+nav > ul > li {
+	display: inline-block;
+	width: 17%;
+	margin: 0 4%;
+	border-width: 0 0 0.2em 0;
+	border-style: solid;
+	border-color: transparent;
+	position: relative;
+	text-align: center;
+}
+
+nav > ul > li:last-of-type {
+	margin-right: 0;
+}
+
+nav > ul > li > a {
+	display: block;
+	color:   hsla(40, 30%, 4%, 1);
+	position: relative;
+	top: 0;
+	margin-left: -50%;
+	margin-right: -50%;
+}
+nav > ul > li > a:hover {
+	color:   hsla(15, 100%, 34%, 1);
+}
+
+nav > ul > li.active {
+	border-color: hsla(40, 30%, 4%, 1);
+}
