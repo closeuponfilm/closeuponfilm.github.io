@@ -19,7 +19,11 @@ by {{ page.author }}
 </p>
 <div class="image">
 	<img src="/media/{{ page.image }}.jpg" alt="{{ page.title }}" />
-	<p>{% if page.image_caption %}{{ page.image_caption }}{% else %}This image has no caption, but if it did have a caption then that caption would go here.{% endif %}</p>
+	{% if page.image_caption %}
+	<p>
+	{{ page.image_caption }}
+	</p>
+	{% endif %}
 </div>
 <div id="content">
 	{{ content }}
